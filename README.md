@@ -44,9 +44,9 @@ The focus of this challenge is to improve and analyze the performance of the VBA
 
  2) Another observation is that the first run of the subroutines seem to take a little longer, possibly due to initial resource allocation in memory. But subsequent runs show more or less the same elapsed time for 2018 and 2017.  
 
- 3) Additional potential improvment can be to declare and populate *tickers* array dynamically (instead of hardcoding ticker values) which will become very useful when the analysis is expanded to all stocks. Doing so may cause elaspsed time to go up slightly (from 0.26 sec to 0.32 for 2017 which is a 20% increase using subrountine *AllStocksAnalysisRefactoredWithDynTickerArray()* ) but the code scalability that it offers outweighs the slight increase in run time.  
+ 3) Additional potential improvment can be to declare and populate *tickers* array dynamically (instead of hardcoding ticker values) which will become very useful when the analysis is expanded to all stocks. Doing so may cause elaspsed time to go up slightly (from 0.26 sec to 0.32 for 2017 which is a 20% increase using subrountine *AllStocksAnalysisRefactoredWithDynTickerArray()* ) but the code scalability that it offers outweighs the slight increase in run time. There may be a better way to accomplish this using a built-in function but I couldnt find a reliable one online.
 
-![](/Dynamic_Population_of_Tickers_Array.png)
+![](/resources/Dynamic_Population_of_Tickers_Array.png)
 
 <br /> 
 
@@ -67,6 +67,6 @@ Overall, the purpose of refactoring is to organize/structure the code in a bette
 
 - The process requires proper resource/time allocation and thorough testing of larger applications.
 
-For example, in case of stock analysis, addition of code to dynamically populate tickers array required peroper testing to make sure all values were captured. 
+For example, in case of stock analysis, code refactor and addition of logic to dynamically populate tickers array required proper testing to make sure all values were captured. 
 
 There are pros and cons of code refactor and each application should be assessed for areas of improvement, time/resource availability, project dealines and cost associated before making any major changes.
