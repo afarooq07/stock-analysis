@@ -44,7 +44,7 @@ The focus of this challenge is to improve and analyze the performance of the VBA
 
  2) Another observation is that the first run of the subroutines seem to take a little longer, possibly due to initial resource allocation in memory. But subsequent runs show more or less the same elapsed time for 2018 and 2017.  
 
- 3) Potential Improvment - we can declare and populate *tickers* array dynamically (instead of hardcoding the values) which will become very useful when the analysis is expanded to all stocks. Doing so may cause elaspsed time goes up slightly (from 0.26 sec to 0.32 for 2017 which is a 20% increase) but overall performance improvement still stays above 99%. Performance analysis for this item was done using subrountine *AllStocksAnalysisRefactoredWithDynTickerArray()*  
+ 3) Additional potential improvment can be to declare and populate *tickers* array dynamically (instead of hardcoding ticker values) which will become very useful when the analysis is expanded to all stocks. Doing so may cause elaspsed time to go up slightly (from 0.26 sec to 0.32 for 2017 which is a 20% increase using subrountine *AllStocksAnalysisRefactoredWithDynTickerArray()* ) but the code scalability that it offers outweighs the slight increase in run time.  
 
 ![](/Dynamic_Population_of_Tickers_Array.png)
 
@@ -52,7 +52,7 @@ The focus of this challenge is to improve and analyze the performance of the VBA
 
 
 ## Summary
-Overall, he purpose of refacting is to organize/structure the code better but not change its behavior. LIsted below are some of the pros and cons of this approach. 
+Overall, the purpose of refactoring is to organize/structure the code in a better way but not change its behavior. Listed below are some of the pros and cons of this approach. 
 
 ### Advantages of Code Refactor:
 - It can help improve the design of application which can:
@@ -69,4 +69,4 @@ Overall, he purpose of refacting is to organize/structure the code better but no
 
 For example, in case of stock analysis, addition of code to dynamically populate tickers array required peroper testing to make sure all values were captured. 
 
-There are pros and cons of code refactor and each application should be assessed for areas of improvement, time availability and cost associated before making any major changes.
+There are pros and cons of code refactor and each application should be assessed for areas of improvement, time/resource availability, project dealines and cost associated before making any major changes.
