@@ -31,7 +31,7 @@ The focus of this challenge is to improve and analyze the performance of stock a
 
  ### Resources: 
  1) Datasource: VBA_Challenge.xlsm
- 2) Images: Available underresources folder:
+ 2) Images: Available under resources folder:
     - VBA_Challenge_2018
     - VBA_Challenge_2017
  3) Code Details - Subroutines of interest:
@@ -42,11 +42,11 @@ The focus of this challenge is to improve and analyze the performance of stock a
 
  ### Conclusions:  
  
- 1) Looking at 2017 elapsed time stats, we can see that there is over 99% improvement with the refectored code that eliminates looping logic per ticker. Please refer to screenshots below:  
+ 1) Looking at 2017 elapsed time stats, we can see that there is over 99% improvement with the refectored code that eliminates looping logic per ticker. Please refer to screenshots below (left: after refactor, right: before refector):  
 
  <br /> 
  <img src="/resources/VBA_Challenge_2017.png" width=300 align=left> 
- <img src="/resources/VBA_Challenge_2018.png" width=300 align=center>
+ <img src="/resources/2017_ElaspsedTime_Without_Refactor.png" width=300 align=center>
  <br />
 
  2) The first run of the subroutines seem to take a little longer, possibly due to initial resource allocation in memory. But subsequent runs show more or less the same elapsed time for 2018 and 2017.  
